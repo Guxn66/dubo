@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💥生死对赌协议💥</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="drama-banner">⚠️ 高能预警：买定离手 ⚠️</div>
+            <h1>☠️ 生死对赌协议 ☠️</h1>
+            <p class="subtitle">—— 既然相爱，那就相杀 ——</p>
+        </header>
+
+        <section class="battle-arena">
+            <div class="fighter fighter-a">
+                <h2>🥊 甲方 (挑战者)</h2>
+                <div class="name-display" id="partyA-name-display">__________</div>
+                <div class="quote">"无感情锚点，发展过快~"</div>
+            </div>
+
+            <div class="vs-badge">VS</div>
+
+            <div class="fighter fighter-b">
+                <h2>🛡️ 乙方 (守护者)</h2>
+                <div class="name-display" id="partyB-name-display">__________</div>
+                <div class="quote">"甜甜恋爱很好磕！"</div>
+            </div>
+        </section>
+
+        <main class="agreement-content">
+            <div class="sticker sticker-top">📌</div>
+            <article>
+                <h3>🎯 赌局标的</h3>
+                <p>关于 <strong>杨婷 & 王业鑫</strong> 这对情侣还能在恋爱的小船上划多久？</p>
+
+                <h3>🎲 赌局内容</h3>
+                <ul>
+                    <li><strong>甲方 (毒奶一口)：</strong>自今日起，这恋爱巨轮 <strong>3个月内</strong> 必翻！(≤3个月)</li>
+                    <li><strong>乙方 (死磕到底)：</strong>自今日起，这恋爱巨轮 <strong>稳超3个月</strong>！(>3个月)</li>
+                    <li><strong>⏳ 见证时间：</strong><br>从 <span class="highlight">2025.12.16</span> 盯着看到 <span
+                            class="highlight">2026.03.16</span> 24:00！</li>
+                </ul>
+
+                <h3>💰 赌注 (玩的就是心跳)</h3>
+                <div class="bet-box">
+                    <p>🏆 <strong>赢家特权：</strong> 享受一顿 <strong>¥100/人</strong> 的豪华正餐！</p>
+                    <p>🍽️ <strong>输家惩罚：</strong> 掏钱！而且 <strong>输家只能从赢家挑剩下的3个餐厅里选！</strong> (杀人诛心)</p>
+                    <p>⏱️ <strong>兑现时限：</strong> 结果出来15天内必须安排，不许赖账！</p>
+                </div>
+
+                <h3>🧐 怎么算赢？</h3>
+                <ul>
+                    <li>👀 <strong>眼见为实：</strong> 只要大家都看到他俩还在腻歪，或者当事人自己承认“还在谈”，那就是没分！</li>
+                    <li>👻 <strong>薛定谔的猫：</strong> 如果到期了大家都联系不上人，默认 <strong>没分</strong>！甲方（盼分手的）只能认栽掏钱！</li>
+                    <li>🤝 <strong>愿赌服输：</strong> 结果一出，3天内必须定下吃饭地儿，谁反悔谁小狗！🐶</li>
+                </ul>
+
+                <h3>🚫 君子协定</h3>
+                <ul>
+                    <li>1. 纯属娱乐，禁止真砍人。🖊️ 签字即生效！</li>
+                    <li>2. <strong>禁止作弊！</strong> 为了赢赌注故意去拆散人家的，直接判负！(做个人吧)</li>
+                    <li>3. 无论谁输谁赢，友谊第一，吃饭第二。</li>
+                </ul>
+            </article>
+        </main>
+
+        <section class="signatures">
+            <div class="signature-block party-a-block" id="block-partyA">
+                <h3>👇 甲方画押</h3>
+                <div class="signature-area">
+                    <div class="signature-display" id="display-partyA"></div>
+                    <div class="stamp-area" id="stamp-partyA">
+                        <div class="stamp stamp-red">
+                            <span class="stamp-text">已</span>
+                            <span class="stamp-text">签</span>
+                            <span class="stamp-text">约</span>
+                        </div>
+                    </div>
+                    <div class="fingerprint-area" id="fingerprint-partyA">
+                        <div class="fingerprint fingerprint-red">👆</div>
+                        <span class="fingerprint-label">手印</span>
+                    </div>
+                    <div class="signature-meta" id="meta-partyA"></div>
+                </div>
+                <button class="btn-sign btn-red" onclick="openSignModal('partyA')">🤡 甲方签字 (不信邪)</button>
+            </div>
+
+            <div class="signature-block party-b-block" id="block-partyB">
+                <h3>👇 乙方画押</h3>
+                <div class="signature-area">
+                    <div class="signature-display" id="display-partyB"></div>
+                    <div class="stamp-area" id="stamp-partyB">
+                        <div class="stamp stamp-blue">
+                            <span class="stamp-text">已</span>
+                            <span class="stamp-text">签</span>
+                            <span class="stamp-text">约</span>
+                        </div>
+                    </div>
+                    <div class="fingerprint-area" id="fingerprint-partyB">
+                        <div class="fingerprint fingerprint-blue">👆</div>
+                        <span class="fingerprint-label">手印</span>
+                    </div>
+                    <div class="signature-meta" id="meta-partyB"></div>
+                </div>
+                <button class="btn-sign btn-blue" onclick="openSignModal('partyB')">😎 乙方签字 (稳如狗)</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Generated with ❤️ & 😈 on 2025.12.16</p>
+        </footer>
+    </div>
+
+    <!-- Signing Modal -->
+    <div id="signModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle">请签字</h3>
+            <div class="canvas-container">
+                <canvas id="signaturePad"></canvas>
+            </div>
+            <div class="modal-actions">
+                <button class="btn-clear" onclick="clearPad()">重写</button>
+                <button class="btn-save" onclick="saveSignature()">确认签字</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
