@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>生死对赌协议</title>
+    <title>💥生死对赌协议💥</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
@@ -13,107 +14,143 @@
 <body>
     <div class="container">
         <header>
-            <h1>生死对赌协议</h1>
+            <div class="drama-banner">⚠️ 高能预警：买定离手 ⚠️</div>
+            <h1>☠️ 生死对赌协议 ☠️</h1>
+            <p class="subtitle">—— 既然相爱，那就相杀 ——</p>
         </header>
 
-        <main class="agreement-content">
-            <section class="parties">
-                <p><strong>甲方：</strong>__________</p>
-                <p><strong>乙方：</strong>__________</p>
-            </section>
+        <section class="battle-arena">
+            <div class="fighter fighter-a">
+                <h2>🥊 甲方</h2>
+                <div class="fighter-name">唐泽雨</div>
+                <div class="quote">"无感情锚点，发展过快~"</div>
+            </div>
 
-            <section class="clause">
-                <h3>一、赌局标的</h3>
-                <p>双方就既成情侣<strong>杨婷</strong>与<strong>王业鑫</strong>的恋爱存续期限进行打赌。</p>
-            </section>
+            <div class="vs-badge">VS</div>
 
-            <section class="clause">
-                <h3>二、赌局内容</h3>
-                <p>1. 甲方主张：目标情侣自本协议签订之日起，恋爱关系存续不超过3个月；</p>
-                <p>2. 乙方主张：目标情侣自本协议签订之日起，恋爱关系存续超过3个月；</p>
-                <p>3. 赌局期限：自协议签订当日（<strong>2025年12月16日</strong>）起至<strong>2026年3月16日</strong>24:00止。</p>
-            </section>
+            <div class="fighter fighter-b">
+                <h2>🛡️ 乙方</h2>
+                <div class="fighter-name">赖许若</div>
+                <div class="quote">"甜甜恋爱很好磕！"</div>
+            </div>
+        </section>
 
-            <section class="clause countdown-section">
-                <div class="countdown" id="countdown">
-                    <span>距赌局结算还剩：</span>
-                    <span id="days">00</span>天
-                    <span id="hours">00</span>时
-                    <span id="minutes">00</span>分
-                    <span id="seconds">00</span>秒
+        <!-- 倒计时区域 -->
+        <section class="countdown-section">
+            <div class="countdown-title">⏰ 赌局倒计时 ⏰</div>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-num" id="days">00</span>
+                    <span class="countdown-label">天</span>
                 </div>
-            </section>
+                <div class="countdown-item">
+                    <span class="countdown-num" id="hours">00</span>
+                    <span class="countdown-label">时</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-num" id="minutes">00</span>
+                    <span class="countdown-label">分</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-num" id="seconds">00</span>
+                    <span class="countdown-label">秒</span>
+                </div>
+            </div>
+            <div class="countdown-note">2025.12.16 → 2026.03.16</div>
+        </section>
 
-            <section class="clause">
-                <h3>三、赌注约定</h3>
-                <p>1. 若甲方胜诉（目标情侣存续期≤3个月），由乙方承担一顿正餐，标准：人均消费约100元，用餐地点由乙方推荐3个选项，甲方最终选定；</p>
-                <p>2. 若乙方胜诉（目标情侣存续期＞3个月），由甲方承担一顿正餐，标准同上，用餐地点由甲方推荐3个选项，乙方最终选定；</p>
-                <p>3. 用餐时间：赌局结果确认后15日内，双方协商确定，不得无故拖延。</p>
-            </section>
+        <main class="agreement-content">
+            <div class="sticker sticker-top">📌</div>
+            <article>
+                <h3>🎯 赌局标的</h3>
+                <p>关于 <strong>杨婷 & 王业鑫</strong> 这对情侣还能在恋爱的小船上划多久？</p>
 
-            <section class="clause">
-                <h3>四、结果确认方式</h3>
-                <p>1. 双方需在赌局期限内共同关注目标情侣状态，优先以"双方共同目击目标情侣仍以恋爱关系相处"或"目标情侣本人确认未分手"作为存续依据；</p>
-                <p>2. 若期限届满前，双方均无法确认目标情侣状态，默认按"存续超过3个月"判定，甲方承担赌注；</p>
-                <p>3. 结果确认后，双方需在3日内达成用餐共识，不得反悔。</p>
-            </section>
+                <h3>🎲 赌局内容</h3>
+                <ul>
+                    <li><strong>甲方 (毒奶一口)：</strong>自今日起，这恋爱巨轮 <strong>3个月内</strong> 必翻！(≤3个月)</li>
+                    <li><strong>乙方 (死磕到底)：</strong>自今日起，这恋爱巨轮 <strong>稳超3个月</strong>！(>3个月)</li>
+                </ul>
 
-            <section class="clause">
-                <h3>五、其他约定</h3>
-                <p>1. 本协议为朋友间娱乐性质，不涉及非法赌博，双方自愿参与，签字即视为认可所有条款；</p>
-                <p>2. 不得为影响赌局结果故意干扰目标情侣的恋爱关系，否则视为违约，违约方直接承担赌注；</p>
-                <p>3. 本协议一式无数份，甲乙双方各执无数份，签字后生效，未尽事宜由双方友好协商解决。</p>
-            </section>
+                <h3>💰 赌注 (玩的就是心跳)</h3>
+                <div class="bet-box">
+                    <p>🏆 <strong>赢家特权：</strong> 享受一顿 <strong>¥100/人</strong> 的豪华正餐！</p>
+                    <p>🍽️ <strong>输家惩罚：</strong> 掏钱！而且 <strong>输家只能从赢家挑剩下的3个餐厅里选！</strong> (杀人诛心)</p>
+                    <p>⏱️ <strong>兑现时限：</strong> 结果出来15天内必须安排，不许赖账！</p>
+                </div>
+
+                <h3>🧐 怎么算赢？</h3>
+                <ul>
+                    <li>👀 <strong>眼见为实：</strong> 只要大家都看到他俩还在腻歪，或者当事人自己承认"还在谈"，那就是没分！</li>
+                    <li>👻 <strong>薛定谔的猫：</strong> 如果到期了大家都联系不上人，默认 <strong>没分</strong>！甲方（盼分手的）只能认栽掏钱！</li>
+                    <li>🤝 <strong>愿赌服输：</strong> 结果一出，3天内必须定下吃饭地儿，谁反悔谁小狗！🐶</li>
+                </ul>
+
+                <h3>🚫 君子协定</h3>
+                <ul>
+                    <li>1. 纯属娱乐，禁止真砍人。🖊️ 签字即生效！</li>
+                    <li>2. <strong>禁止作弊！</strong> 为了赢赌注故意去拆散人家的，直接判负！(做个人吧)</li>
+                    <li>3. 无论谁输谁赢，友谊第一，吃饭第二。</li>
+                </ul>
+            </article>
         </main>
 
         <section class="signatures">
-            <div class="signature-block" id="block-partyA">
-                <p class="sign-label">甲方签字：</p>
+            <div class="signature-block party-a-block" id="block-partyA">
+                <h3>👇 甲方画押</h3>
                 <div class="signature-area">
                     <div class="signature-display" id="display-partyA"></div>
                     <div class="stamp-area" id="stamp-partyA">
-                        <div class="stamp">已签约</div>
+                        <div class="stamp stamp-red">已签约</div>
+                    </div>
+                    <div class="fingerprint-area" id="fingerprint-partyA">
+                        <div class="fingerprint">👆</div>
                     </div>
                 </div>
-                <p class="signature-meta" id="meta-partyA"></p>
-                <button class="btn-sign" onclick="openSignModal('partyA')">甲方签字</button>
+                <div class="signature-meta" id="meta-partyA"></div>
+                <button class="btn-sign btn-red" onclick="openSignModal('partyA')">🤡 甲方签字 (不信邪)</button>
             </div>
 
-            <div class="signature-block" id="block-partyB">
-                <p class="sign-label">乙方签字：</p>
+            <div class="signature-block party-b-block" id="block-partyB">
+                <h3>👇 乙方画押</h3>
                 <div class="signature-area">
                     <div class="signature-display" id="display-partyB"></div>
                     <div class="stamp-area" id="stamp-partyB">
-                        <div class="stamp">已签约</div>
+                        <div class="stamp stamp-blue">已签约</div>
+                    </div>
+                    <div class="fingerprint-area" id="fingerprint-partyB">
+                        <div class="fingerprint">👆</div>
                     </div>
                 </div>
-                <p class="signature-meta" id="meta-partyB"></p>
-                <button class="btn-sign" onclick="openSignModal('partyB')">乙方签字</button>
+                <div class="signature-meta" id="meta-partyB"></div>
+                <button class="btn-sign btn-blue" onclick="openSignModal('partyB')">😎 乙方签字 (稳如狗)</button>
             </div>
         </section>
 
         <section class="download-section">
-            <button class="btn-download" onclick="downloadAsImage()">保存为图片</button>
-            <button class="btn-download" onclick="downloadAsPDF()">保存为PDF</button>
-            <button class="btn-download" onclick="window.print()">打印</button>
+            <button class="btn-download" onclick="downloadAsImage()">📷 保存图片</button>
+            <button class="btn-download" onclick="downloadAsPDF()">📄 保存PDF</button>
+            <button class="btn-download" onclick="window.print()">🖨️ 打印</button>
         </section>
+
+        <footer>
+            <p>Generated with ❤️ & 😈 on 2025.12.16</p>
+        </footer>
     </div>
 
     <!-- Signing Modal -->
     <div id="signModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h3 id="modalTitle">请在下方签名</h3>
+            <h3 id="modalTitle">请签字</h3>
             <div class="canvas-container">
                 <canvas id="signaturePad"></canvas>
             </div>
             <div class="modal-actions">
                 <button class="btn-clear" onclick="clearPad()">重写</button>
-                <button class="btn-save" onclick="saveSignature()">确认</button>
+                <button class="btn-save" onclick="saveSignature()">确认签字</button>
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 

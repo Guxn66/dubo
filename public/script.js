@@ -29,25 +29,35 @@ function updatePartyState(role, data) {
     const metaEl = document.getElementById(`meta-${role}`);
     const btn = document.querySelector(`#block-${role} .btn-sign`);
     const stampEl = document.getElementById(`stamp-${role}`);
+    const fingerprintEl = document.getElementById(`fingerprint-${role}`);
+    const blockEl = document.getElementById(`block-${role}`);
 
     if (data && data.signature) {
         // Already signed
-        displayEl.innerHTML = `<img src="${data.signature}" alt="签名">`;
-        metaEl.textContent = `签署日期：${new Date(data.date).toLocaleDateString('zh-CN')}`;
+        displayEl.innerHTML = `<img src="${data.signature}" alt="Signature">`;
+        metaEl.textContent = `签订日期：${new Date(data.date).toLocaleDateString()}`;
         btn.disabled = true;
-        btn.textContent = '已签署';
+        btn.textContent = '已签字 ✅';
 
-        // Show stamp
+        // Show stamp and fingerprint with animation
         if (stampEl) stampEl.classList.add('show');
+        setTimeout(() => {
+            if (fingerprintEl) fingerprintEl.classList.add('show');
+        }, 300);
+
+        // Add signed class for celebration effect
+        if (blockEl) blockEl.classList.add('signed');
     } else {
         // Not signed
         displayEl.innerHTML = '';
         metaEl.textContent = '';
         btn.disabled = false;
-        btn.textContent = role === 'partyA' ? '甲方签字' : '乙方签字';
+        btn.textContent = role === 'partyA' ? '🤡 甲方签字 (不信邪)' : '😎 乙方签字 (稳如狗)';
 
-        // Hide stamp
+        // Hide stamp and fingerprint
         if (stampEl) stampEl.classList.remove('show');
+        if (fingerprintEl) fingerprintEl.classList.remove('show');
+        if (blockEl) blockEl.classList.remove('signed');
     }
 }
 
