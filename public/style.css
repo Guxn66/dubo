@@ -1,580 +1,444 @@
-@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
-
-:root {
-    --bg-color: #ffd700;
-    /* Energetic Yellow */
-    --card-bg: #fff;
-    --text-color: #333;
-    --party-a-color: #e74c3c;
-    /* Red */
-    --party-b-color: #3498db;
-    /* Blue */
-    --border-width: 4px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'ZCOOL KuaiLe', cursive, sans-serif;
-    /* Playful font */
-    background: repeating-linear-gradient(45deg,
-            #f1c40f,
-            #f1c40f 20px,
-            #f39c12 20px,
-            #f39c12 40px);
-    color: var(--text-color);
-    margin: 0;
+    font-family: "SimSun", "宋体", serif;
+    background: #f0f0f0;
+    color: #333;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
+    line-height: 2;
+    font-size: 15px;
 }
 
 .container {
-    background-color: var(--card-bg);
-    width: 100%;
     max-width: 800px;
-    padding: 40px;
-    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.8);
-    /* Comic book shadow */
-    border: var(--border-width) solid #000;
-    position: relative;
-    border-radius: 20px;
-}
-
-.drama-banner {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-    font-size: 1.2em;
-    transform: rotate(-2deg);
-    margin-bottom: 20px;
-    box-shadow: 3px 3px 0 #666;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 h1 {
-    font-size: 3em;
-    margin: 10px 0;
-    color: #000;
-    text-shadow: 3px 3px 0px #e74c3c;
-    letter-spacing: 2px;
-}
-
-.subtitle {
-    font-style: italic;
-    color: #666;
-    font-size: 1.2em;
-}
-
-.battle-arena {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #eee;
-    padding: 20px;
-    border-radius: 15px;
-    border: 3px solid #000;
-    margin-bottom: 30px;
-}
-
-.fighter {
-    flex: 1;
-    text-align: center;
-    padding: 10px;
-}
-
-.fighter h2 {
-    font-size: 1.3em;
-    margin-bottom: 5px;
-}
-
-.fighter-a h2 {
-    color: var(--party-a-color);
-}
-
-.fighter-b h2 {
-    color: var(--party-b-color);
-}
-
-.quote {
-    font-size: 0.9em;
-    font-style: italic;
-    color: #555;
-    margin-top: 5px;
-}
-
-.vs-badge {
-    background: #000;
-    color: #fff;
-    font-size: 2em;
+    font-size: 24px;
     font-weight: bold;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    border-radius: 50%;
-    flex-shrink: 0;
-    margin: 0 10px;
-    border: 3px solid #fff;
-    box-shadow: 0 0 0 3px #000;
-    animation: pulse 1s infinite alternate;
-}
-
-@keyframes pulse {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.1);
-    }
+    letter-spacing: 6px;
 }
 
 .agreement-content {
-    position: relative;
-    background: #fafafa;
-    border: 2px dashed #ccc;
+    margin-bottom: 40px;
+}
+
+.parties {
+    margin-bottom: 30px;
     padding: 20px;
-    border-radius: 10px;
+    background: #fafafa;
+    border: 1px solid #ddd;
 }
 
-.sticker {
-    position: absolute;
-    top: -15px;
-    right: -10px;
-    font-size: 3em;
-    transform: rotate(15deg);
-}
-
-h3 {
-    border-bottom: 3px solid #f1c40f;
-    display: inline-block;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-p,
-li {
-    line-height: 1.6;
-    font-size: 1.1em;
-}
-
-ul,
-ol {
-    padding-left: 20px;
-}
-
-.highlight {
-    background: yellow;
-    padding: 0 5px;
-    font-weight: bold;
-    border-radius: 3px;
-    border: 1px solid #000;
-}
-
-.bet-box {
-    background: #ffeaa7;
-    border: 2px solid #fdcb6e;
-    padding: 15px;
-    border-radius: 10px;
+.parties p {
     margin: 10px 0;
+}
+
+.clause {
+    margin-bottom: 25px;
+}
+
+.clause h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.clause p {
+    margin: 8px 0;
+    text-indent: 2em;
+}
+
+.countdown-section {
+    margin: 30px 0;
+}
+
+.countdown {
+    margin: 15px 0;
+    padding: 12px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.countdown span {
+    margin: 0 2px;
+}
+
+#days, #hours, #minutes, #seconds {
+    font-weight: bold;
+    color: #ff6b6b;
 }
 
 .signatures {
     display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    gap: 20px;
+    gap: 40px;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
 }
 
 .signature-block {
     flex: 1;
-    text-align: center;
-    background: #fff;
-    border: 3px solid #000;
-    border-radius: 15px;
-    padding: 15px;
-    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
+    position: relative;
 }
 
-.signature-block:hover {
-    transform: translateY(-5px);
+.sign-label {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.party-a-block {
-    border-color: var(--party-a-color);
-}
-
-.party-b-block {
-    border-color: var(--party-b-color);
+.signature-area {
+    position: relative;
+    min-height: 80px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 8px;
 }
 
 .signature-display {
-    height: 100px;
-    border-bottom: 2px dashed #ccc;
-    margin: 10px 0;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .signature-display img {
-    max-height: 90px;
-    transform: rotate(-5deg);
-    /* Make signature look slapped on */
+    max-height: 60px;
+    max-width: 100%;
 }
 
-.signature-meta {
-    font-size: 0.8em;
-    color: #888;
-    height: 20px;
-}
-
-.btn-sign {
-    border: 3px solid #000;
-    padding: 12px 20px;
-    font-size: 1.1em;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: bold;
-    border-radius: 30px;
-    box-shadow: 3px 3px 0 #000;
-    transition: all 0.1s;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.btn-sign:active {
-    box-shadow: 0 0 0 #000;
-    transform: translate(3px, 3px);
-}
-
-.btn-sign:disabled {
-    background: #ddd;
-    color: #888;
-    border-color: #aaa;
-    box-shadow: none;
-    cursor: not-allowed;
-    transform: none;
-}
-
-.btn-red {
-    background-color: var(--party-a-color);
-    color: #fff;
-}
-
-.btn-red:hover {
-    background-color: #c0392b;
-}
-
-.btn-blue {
-    background-color: var(--party-b-color);
-    color: #fff;
-}
-
-.btn-blue:hover {
-    background-color: #2980b9;
-}
-
-/* Modal Tweaks */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
-}
-
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 4px solid #000;
-    width: 90%;
-    max-width: 500px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 0 #e74c3c;
-    text-align: center;
-}
-
-.canvas-container {
-    border: 3px dashed #333;
-    border-radius: 10px;
-    margin: 20px 0;
-    background: #fff;
-}
-
-.btn-clear {
-    background: #e74c3c;
-    box-shadow: 3px 3px 0 #000;
-    border: 2px solid #000;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-
-.btn-save {
-    background: #2ecc71;
-    box-shadow: 3px 3px 0 #000;
-    border: 2px solid #000;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-
-.btn-clear:active,
-.btn-save:active {
-    box-shadow: none;
-    transform: translate(3px, 3px);
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.8em;
-    opacity: 0.7;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    .container {
-        padding: 20px;
-        border-width: 2px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    .battle-arena {
-        flex-direction: column;
-    }
-
-    .vs-badge {
-        margin: 10px 0;
-    }
-
-    .signatures {
-        flex-direction: column;
-    }
-}
-
-/* 盖章效果 */
 .stamp-area {
     display: none;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 10;
+    top: 5px;
+    right: 5px;
 }
 
 .stamp-area.show {
     display: block;
-    animation: stampDown 0.5s ease-out forwards;
-}
-
-@keyframes stampDown {
-    0% {
-        transform: scale(2) rotate(-15deg);
-        opacity: 0;
-    }
-
-    50% {
-        transform: scale(1.2) rotate(-5deg);
-        opacity: 0.8;
-    }
-
-    100% {
-        transform: scale(1) rotate(-8deg);
-        opacity: 1;
-    }
 }
 
 .stamp {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 2px;
-    box-shadow:
-        inset 0 0 10px rgba(0, 0, 0, 0.3),
-        0 4px 8px rgba(0, 0, 0, 0.3);
-    position: relative;
-}
-
-.stamp::before {
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    right: 3px;
-    bottom: 3px;
-    border-radius: 50%;
-    border: 2px solid currentColor;
-}
-
-.stamp::after {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 4px;
-    background: currentColor;
-    border-radius: 2px;
-}
-
-.stamp-red {
-    background: linear-gradient(135deg, #ff6b6b, #e74c3c);
-    color: #fff;
-    border: 4px solid #c0392b;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.stamp-blue {
-    background: linear-gradient(135deg, #74b9ff, #3498db);
-    color: #fff;
-    border: 4px solid #2980b9;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.stamp-text {
-    line-height: 1;
-}
-
-/* 手印效果 */
-.fingerprint-area {
-    display: none;
-    position: absolute;
-    bottom: 35px;
-    right: 10px;
-    text-align: center;
-}
-
-.fingerprint-area.show {
-    display: block;
-    animation: fingerprintPress 0.6s ease-out forwards;
-}
-
-@keyframes fingerprintPress {
-    0% {
-        transform: scale(0) rotate(0deg);
-        opacity: 0;
-    }
-
-    50% {
-        transform: scale(1.3) rotate(10deg);
-        opacity: 0.8;
-    }
-
-    100% {
-        transform: scale(1) rotate(5deg);
-        opacity: 1;
-    }
-}
-
-.fingerprint {
-    width: 50px;
+    width: 60px;
     height: 60px;
-    border-radius: 40% 40% 45% 45%;
+    border: 3px solid #c00;
+    border-radius: 50%;
+    color: #c00;
+    font-size: 12px;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
-    position: relative;
-    box-shadow:
-        inset 0 0 15px rgba(0, 0, 0, 0.4),
-        0 3px 6px rgba(0, 0, 0, 0.3);
+    transform: rotate(-15deg);
+    opacity: 0.85;
 }
 
-.fingerprint::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 40% 40% 45% 45%;
-    background: repeating-radial-gradient(ellipse at center,
-            transparent 0px,
-            transparent 2px,
-            rgba(255, 255, 255, 0.1) 2px,
-            rgba(255, 255, 255, 0.1) 4px);
-}
-
-.fingerprint-red {
-    background: linear-gradient(180deg, #ff6b6b, #c0392b);
-    border: 2px solid #a93226;
-}
-
-.fingerprint-blue {
-    background: linear-gradient(180deg, #74b9ff, #2980b9);
-    border: 2px solid #1f618d;
-}
-
-.fingerprint-label {
-    display: block;
-    font-size: 10px;
+.signature-meta {
+    font-size: 12px;
     color: #666;
-    margin-top: 3px;
+    min-height: 20px;
 }
 
-/* 签名区域调整 */
-.signature-area {
-    position: relative;
-    min-height: 120px;
+.btn-sign {
+    margin-top: 10px;
+    padding: 10px 25px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
 }
 
-.signature-display {
-    height: 100px;
-    border-bottom: 2px dashed #ccc;
-    margin: 10px 0;
+.btn-sign:hover {
+    background: #555;
+}
+
+.btn-sign:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* Download Section */
+.download-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px dashed #ccc;
+    text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-/* 签名完成后的庆祝效果 */
-@keyframes celebrate {
+.btn-download {
+    padding: 10px 20px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s;
+}
 
-    0%,
-    100% {
-        transform: scale(1);
+.btn-download:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* 打印时隐藏下载按钮和签字按钮 */
+@media print {
+    .download-section,
+    .btn-sign,
+    .countdown {
+        display: none !important;
     }
 
-    25% {
-        transform: scale(1.05) rotate(-1deg);
+    body {
+        padding: 0;
+        background: #fff;
     }
 
-    50% {
-        transform: scale(1.02);
-    }
-
-    75% {
-        transform: scale(1.05) rotate(1deg);
+    .container {
+        box-shadow: none;
+        border: none;
+        padding: 20px;
     }
 }
 
-.signature-block.signed {
-    animation: celebrate 0.8s ease-out;
-    box-shadow:
-        5px 5px 0 rgba(0, 0, 0, 0.2),
-        0 0 20px rgba(255, 215, 0, 0.5);
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.modal-content {
+    background: #fff;
+    max-width: 500px;
+    margin: 10% auto;
+    padding: 30px;
+    border: 2px solid #333;
+    position: relative;
+}
+
+.modal-content h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.canvas-container {
+    border: 1px solid #333;
+    background: #fff;
+    margin-bottom: 20px;
+    min-height: 200px;
+}
+
+.canvas-container canvas {
+    display: block;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-clear, .btn-save {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-clear {
+    background: #999;
+    color: #fff;
+}
+
+.btn-save {
+    background: #333;
+    color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+
+    .parties {
+        padding: 15px;
+    }
+
+    .parties p {
+        font-size: 13px;
+    }
+
+    .clause h3 {
+        font-size: 14px;
+    }
+
+    .clause p {
+        font-size: 13px;
+        text-indent: 1.5em;
+    }
+
+    .countdown {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .signatures {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .sign-label {
+        font-size: 13px;
+    }
+
+    .signature-area {
+        min-height: 60px;
+    }
+
+    .signature-display {
+        height: 50px;
+    }
+
+    .signature-display img {
+        max-height: 45px;
+    }
+
+    .btn-sign {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .stamp {
+        width: 40px;
+        height: 40px;
+        font-size: 9px;
+        border-width: 2px;
+    }
+
+    .signature-meta {
+        font-size: 10px;
+    }
+
+    .modal-content {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-content h3 {
+        font-size: 16px;
+        flex-shrink: 0;
+    }
+
+    .canvas-container {
+        flex: 1;
+        min-height: 0;
+        display: flex;
+    }
+
+    .canvas-container canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .modal-actions {
+        flex-shrink: 0;
+        padding-top: 10px;
+    }
+
+    .close {
+        z-index: 10;
+    }
+}
+
+/* 横屏时签名区域优化 */
+@media (max-width: 600px) and (orientation: landscape) {
+    .modal-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .modal-content h3 {
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .canvas-container {
+        flex: 1;
+        height: calc(100% - 60px);
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 0;
+    }
+
+    .btn-clear, .btn-save {
+        padding: 12px 20px;
+    }
 }
